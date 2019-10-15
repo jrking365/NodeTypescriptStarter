@@ -1,9 +1,12 @@
 import express from 'express';
 
 const app = express();
+//configuration for server
+app.set("port", process.env.PORT || 3000);
+app.set("env", 'DEV');
 
 app.get('/', (req, res) => {
-    res.send('Hello');
+    res.send('Hello world');
 });
 
-app.listen(5000, () => console.log('Server running'));
+export default app;
