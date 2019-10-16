@@ -6,19 +6,34 @@
   "scripts": {
     "start": "node dist/server.js",
     "dev": "nodemon src/server.ts",
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "lint": "eslint \"src/**/*.ts\"",
+    "lint-fix": "eslint --fix \"src/**/*.ts\""
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint"
+    ]
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.4.0",
+    "@typescript-eslint/parser": "^2.4.0",
     "errorhandler": "^1.5.1",
-    "express": "^4.17.1"
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "express": "^4.17.1",
+    "prettier": "^1.18.2"
   },
   "devDependencies": {
     "@types/errorhandler": "0.0.32",
     "@types/express": "^4.17.1",
     "@types/node": "^12.7.12",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
     "nodemon": "^1.19.3",
     "ts-node": "^8.4.1",
     "typescript": "^3.6.4"
