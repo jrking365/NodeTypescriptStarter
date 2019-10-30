@@ -1,6 +1,7 @@
 # NodeJS Typescript starter pack
 
-This is a  default repository for starting NodeJs project using typescript
+This is a  default repository for starting NodeJs project using typescript. Here, you will find a basic startup in other to get you started. this is a TDD based template, we will be also configuring in a more *efficient* way routes, controllers and other concept.
+If you have any inquiries do not hesitate to contact me mail@jrking-dev.com. If you want to contribute, first open the issue then we will discuss about it and get you started. stay tune for more.
 
 ## Test librairies
 
