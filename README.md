@@ -53,3 +53,19 @@ app.get('/', (req, res) => {
   res.send('Hello world');
 });
 ```
+
+## Automated task runner : gulp
+
+In this project, in other to manage task easily, such as compilation, project building, lint-fix and other, we need to install a task runner that will run task after task when we launch one single command. The task runner that we are going to use is called **gulp**.  
+in dev mode, during a build , we want to trigger differets actions before the project runs, we have them as follow:  
+
+* a lint fix ;
+* a prettier fix ;
+* run the test ;
+* compile ;
+* build.  
+
+We will run alll those task one after the other using gulp.
+firstly, we need to install gulp and all the other dependencies :  
+`npm install --save-dev gulp gulp-typescript`.
+Now we need to create a file called *gulpfile.js* that will contain our tasks.
